@@ -12,8 +12,11 @@
 
 - (void)open:(CDVInvokedUrlCommand*)command
 {
-        NSURL *appSettings = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-        [[UIApplication sharedApplication] openURL:appSettings];
+        // NSURL *appSettings = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        // [[UIApplication sharedApplication] openURL:appSettings];
+        if (&UIApplicationOpenSettingsURLString != NULL) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
+        } 
 }
 
 @end
