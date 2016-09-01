@@ -5,7 +5,7 @@ The plugin allows you to open Settings view from Android Cordova application and
 ##Adding the Plugin to your project
 
 ```bash
-cordova plugin add https://github.com/selahssea/Cordova-open-native-settings.git
+cordova plugin add https://github.com/zazen00/Cordova-open-native-settings.git
 ```
 
 ##Removing the Plugin to your project
@@ -14,7 +14,7 @@ cordova plugin add https://github.com/selahssea/Cordova-open-native-settings.git
 cordova plugin rm com.phonegap.plugins.nativesettingsopener
 ```
 
-##Using the plugin (opens Location Settings in Android and Application Settings in iOS)
+##Using the plugin (opens Location Settings in Android and WiFi Settings in iOS)
 
 ```
 cordova.plugins.settings.open(success_callback, failure_callback);
